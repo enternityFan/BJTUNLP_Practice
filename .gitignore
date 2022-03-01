@@ -3,7 +3,8 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
-
+/TextCNN/DATA/
+/TextCNN/data/
 # Other files and folders
 .settings/
 
