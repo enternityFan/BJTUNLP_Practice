@@ -36,7 +36,7 @@ if __name__ == "__main__":
     glove_embedding = d2l.TokenEmbedding('glove.6b.100d')
     embeds = glove_embedding[vocab.idx_to_token]
     net.embedding.weight.data.copy_(embeds)
-    net.embedding.weight.requires_grad = False
+    net.embedding.weight.requires_grad = True
     net.apply(init_weights)
     loss = nn.CrossEntropyLoss(reduction='none')
     trainer = torch.optim.Adam(net.parameters(),lr=lr)
